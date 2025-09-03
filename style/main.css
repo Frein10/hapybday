@@ -28,8 +28,9 @@ body {
   top: 20vh;
 }
 
+/* --- Responsive font scaling --- */
 .one {
-  font-size: 4.5rem;
+  font-size: 8vw; /* scales with screen width */
 }
 
 .two {
@@ -38,7 +39,7 @@ body {
 }
 
 .three {
-  font-size: 3rem;
+  font-size: 6vw;
 }
 
 .four .text-box {
@@ -48,6 +49,7 @@ body {
   padding: 10px;
   position: relative;
   width: 600px;
+  max-width: 90%;
 }
 
 .text-box p {
@@ -70,7 +72,7 @@ body {
 }
 
 .five p {
-  font-size: 2rem;
+  font-size: 4.5vw;
   left: 0;
   position: absolute;
   right: 0;
@@ -83,17 +85,16 @@ body {
 }
 
 .five .idea-5 {
-  font-size: 4rem;
+  font-size: 8vw;
 }
 
 .idea-5 span, .idea-6 span, .wish-hbd span {
   display: inline-block;
 }
 
-.idea-6 span{
-  font-size: 15rem;
+.idea-6 span {
+  font-size: 15vw;
 }
-
 
 .six {
   position: relative;
@@ -103,15 +104,13 @@ body {
 
 .six img {
   display: inline-block;
-  height: 350px;
-  max-width: 100%;
-  /* height: auto; */
+  height: auto;
+  max-width: 80vw; /* responsive scaling */
 }
 
 .six .hat {
   left: 41.5%;
   position: absolute;
-  /* transform: scale(0.1); */
   top: -35%;
   width: 80px;
 }
@@ -204,19 +203,19 @@ body {
 }
 
 .wish-hbd {
-  font-size: 3em;
+  font-size: 6vw;
   margin: 0;
   text-transform: uppercase;
 }
 
 .wish h5 {
-  font-size: 2rem;
+  font-size: 4vw;
   font-weight: lighter;
   margin: 10px 0 0;
 }
 
 .nine p {
-  font-size: 2rem;
+  font-size: 4vw;
   font-weight: lighter;
 }
 
@@ -252,7 +251,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .container {
-    width: 90%;
+    width: 95%;
   }
 
   .four .text-box {
@@ -269,24 +268,23 @@ body {
   }
 
   .idea-6 span {
-    font-size: 10rem;
+    font-size: 10vw;
   }
 
   .six .hat {
-    /* top: -20px; */
     width: 50px;
   }
 
   .wish-hbd {
-    font-size: 2.2em;
+    font-size: 5vw;
   }
 
   .wish h5 {
-    font-size: 1.4rem;
+    font-size: 3.5vw;
   }
 
   .nine p {
-    font-size: 1.5rem;
+    font-size: 3.5vw;
     font-weight: lighter;
   }
 }
